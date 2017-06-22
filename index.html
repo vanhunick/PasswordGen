@@ -1,0 +1,49 @@
+
+<head>
+  <title>Password</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!--Bootstrap theme-->
+  <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/yeti/bootstrap.min.css" rel="stylesheet" integrity="sha384-HzUaiJdCTIY/RL2vDPRGdEQHHahjzwoJJzGUkYjHVzTwXFQ2QN/nVgX7tzoMW3Ov"
+    crossorigin="anonymous">
+
+  <!-- JQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script
+  src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"
+  integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E="
+  crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.6.0/clipboard.min.js"></script>
+
+
+  <!-- bootstrap -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="src/css/index.css">
+</head>
+
+<body>
+  <div class="container">
+
+    <h1>Generate you password</h1>
+    <div class="jumbotron">
+        <p class="lead">Number of characters</p>
+        <div id="slider" class="sliderDiv">
+            <div id="custom-handle" class="ui-slider-handle"></div>
+        </div>
+        <button id="generate" class="btn btn-lg btn-primary ">Generate</button>
+        <div class="btn-group">
+            <button id="passwd" class="btn btn-lg btn-secondary ">H4!b5at+kWls-8yh4Guq</button>
+            <button id="copyBut" data-clipboard-target="#passwd" class="btn btn-lg btn-danger clip" data-toggle="tooltip" title="copy password" data-clipboard-text="H4!b5at+kWls-8yh4Guq"><i class="fa fa-files-o" aria-hidden="true"></i></button>
+        </div>
+            <p id="copied" hidden="true">&nbsp;<span class="copied"><i class="fa fa-check"></i></span>Copied!</p>
+      </div>
+  </div>
+</body>
+<script src="src/js/index.js"></script>
+<script src="src/js/generator.js"></script>
